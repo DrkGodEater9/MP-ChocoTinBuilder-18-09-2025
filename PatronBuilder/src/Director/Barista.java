@@ -1,25 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Director;
 
+import ModelBebida.BebidaBuilder;
+import ModelBebida.Bebida;
+
 /**
- *
- * @author DrkGodEater
+ * Director que coordina la construcción de bebidas
+ * @author AlexM
  */
-// Director
-class Barista {
+public class Barista {
     private BebidaBuilder builder;
     
+    /**
+     * Establece el builder a utilizar para construir bebidas
+     * @param builder el constructor de bebidas a utilizar
+     */
     public void setBuilder(BebidaBuilder builder) {
         this.builder = builder;
     }
     
+    /**
+     * Obtiene la bebida construida
+     * @return la bebida completamente construida
+     */
     public Bebida getBebida() {
         return builder.getBebida();
     }
     
+    /**
+     * Coordina el proceso de preparación de la bebida
+     * @param tipoLeche tipo de leche a utilizar en la bebida
+     */
     public void prepararBebida(String tipoLeche) {
         builder.buildNombre();
         builder.buildBase();

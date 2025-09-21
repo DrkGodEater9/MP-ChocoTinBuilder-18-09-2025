@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Control;
 
-// Cliente
+import Director.Barista;
+import ModelBebida.*;
 import java.util.Scanner;
 
-public class CafeteriaStarbiks {
+/**
+ * Cliente principal de la cafetería que gestiona la interfaz de usuario
+ * @author AlexM
+ */
+public class Cliente {
+    /**
+     * Método principal que ejecuta el sistema de la cafetería
+     * @param args argumentos de línea de comandos
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Barista barista = new Barista();
